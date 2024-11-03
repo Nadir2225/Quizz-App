@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.QuetionsActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="top|center"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/quest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="what country does this flag belong to?"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="45dp"/>
+
+        <ImageView
+            android:id="@+id/flag"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            tools:src="@drawable/spain"
+            />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="35dp">
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:max="10"
+                tools:progress="7"/>
+
+            <TextView
+                android:id="@+id/progress_string"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="7/10"
+                android:gravity="center_horizontal"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/option1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:text="option 1"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/material_dynamic_secondary40"
+            android:padding="10dp"
+            android:background="@drawable/default_option"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/option2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:text="option 2"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/material_dynamic_secondary40"
+            android:padding="10dp"
+            android:background="@drawable/default_option"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/option3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:text="option 3"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/material_dynamic_secondary40"
+            android:padding="10dp"
+            android:background="@drawable/default_option"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/option4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:text="option 4"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/material_dynamic_secondary40"
+            android:padding="10dp"
+            android:background="@drawable/default_option"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/check_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button"
+            android:text="CHECK"
+            android:backgroundTint="@android:color/white"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.core.widget.NestedScrollView>
